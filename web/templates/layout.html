@@ -13,14 +13,20 @@
   <script src="{% static "js/main.min.js" %}"></script>
 </head>
 <body>
-  <div class="container">
-  {% include "components/navbar.html"%}
+  <div class="container-fluid navbar-container">
+    <div class="container">
+    {% include "components/navbar.html"%}
+    </div>
   </div>
-  <div class="container">
-  {% block body %}{% endblock %}
+  <div id="main-container" class="container-fluid">
+    <div class="container">
+    {% block body %}{% endblock %}
+    </div>
   </div>
-  <div class="container">
-  {% include "components/footer.html" %}
+  <div class="container-fluid footer-container">
+    <div class="container">
+    {% include "components/footer.html" %}
+    </div>
   </div>
 </body>
 </html>
