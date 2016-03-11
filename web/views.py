@@ -17,3 +17,8 @@ class SightingExpertCommentsView(TemplateView):
 class SightingView(TemplateView):
     template_name = "sighting.html"
 
+class SightingsView(TemplateView):
+    template_name = "sightings.html"
+
+class SightQuestionView(TemplateView):
+    template_name = "sight_question.html"
