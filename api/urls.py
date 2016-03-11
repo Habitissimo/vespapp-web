@@ -1,11 +1,12 @@
 from django.conf.urls import url
-from api import views
+from api import views as api_views
 
 urlpatterns = [
-    url(r'^sightings/$', views.sightings),
+    url(r'^sightings/$', api_views.SightingListCreateView.as_view(), name='sightings_list_create'),
 
     url(r'^sightings/(?P<sighting_id>[0-9]+)/$',
-        views.sighting),
+        api_views.SightingRetrieveUpdateView.as_view(), name='sightings_retrieve_update'),
+
     url(r'^sightings/(?P<sighting_id>[0-9]+)/photos/$',
         views.sighting_photos),
 
