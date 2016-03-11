@@ -1,10 +1,13 @@
 from django.conf.urls import url
 from web import views
 from web.views import HomePageView
+from web.views import LocationsPageView
 
 
 urlpatterns = [
     url(r'^$', HomePageView.as_view(), name='home'),
+    
+    url(r'^locations/$', LocationsPageView.as_view(), name='locations'),
 #    url(r'^sightings/$', views.sightings),
 #
 #    url(r'^sightings/(?P<sighting_id>[0-9]+)/$',
