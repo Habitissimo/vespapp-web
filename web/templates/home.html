@@ -1,4 +1,15 @@
 {% extends "layout.html" %}
 
 {% block title %}Home{% endblock %}
-{% block body %}Homepage{% endblock %}
+{% block body %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      {% include "components/button-primary.html" with text="enviar foto" url="#" %}
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
