@@ -34,7 +34,6 @@ urlpatterns = [
      SightExpertCommentView.as_view(), name='sight_expert_comment'),
 
 #    url(r'^sightings/$', views.sightings),
-
 #    url(r'^sightings/(?P<sighting_id>[0-9]+)/$',
 #        views.sighting),
 #    url(r'^sightings/(?P<sighting_id>[0-9]+)/photos/$',
