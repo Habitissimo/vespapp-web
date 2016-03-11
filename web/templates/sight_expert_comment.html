@@ -1,5 +1,10 @@
 {% extends "layout.html" %}
 
 {% block body %}
-	<p>sight_id: {{sighting_id}}  sight_expert_comment_id: {{expert_comment_id}}</p> 
+	<p>sight_expert_comment: {{object.user}}</p> 
+	<p>sighting: {{object.sighting}} </p> 
+	<p>body: {{object.body}} </p> 
+	<p>is_valid: {{object.is_valid}} </p> 
+	<p>created_at: {{object.created_at}} </p> 
+	<p>updated_at: {{object.updated_at}} </p> 
 {% endblock %}
