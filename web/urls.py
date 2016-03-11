@@ -2,11 +2,13 @@ from django.conf.urls import url
 from web import views
 from web.views import HomePageView
 from web.views import SightingsView
+from web.views import SightQuestionView
 
 
 urlpatterns = [
     url(r'^$', HomePageView.as_view(), name='home'),
     url(r'^sightings/$', SightingsView.as_view(), name='sightings'),
+    url(r'^sight_question/(?P<sighting_id>[0-9]+)/$', SightQuestionView.as_view(), name='sight_question'),
 #    url(r'^sightings/$', views.sightings),
 
 ##    url(r'^sightings/(?P<sighting_id>[0-9]+)/$',
