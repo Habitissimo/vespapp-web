@@ -10,6 +10,8 @@ urlpatterns = [
         api_views.SightingPictureCreateView.as_view()),
 
     url(r'^sightings/(?P<sighting_id>[0-9]+)/questions/$', api_views.SightingQuestionsListView.as_view(),
-        name='sightings_questions')
+        name='sightings_questions'),
+
+    url(r'locations/', api_views.LocationsList.as_view(), name='location_list')
 
 ]
