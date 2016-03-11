@@ -7,7 +7,7 @@ from api.serializers import SightingSerializer, PictureSerializer
 from api.models import Sighting, UserComment, ExpertComment
 from api.serializers import SightingSerializer, UserCommentSerializer, ExpertCommentSerializer
 
-
+#Sightings
 class SightingListCreateView(ListCreateAPIView):
     serializer_class = SightingSerializer
 
@@ -21,7 +21,7 @@ class SightingRetrieveUpdateView(RetrieveUpdateAPIView):
     lookup_field = 'id'
     lookup_url_kwarg = 'sighting_id'
 
-
+#Picture
 class SightingPictureCreateView(ListCreateAPIView):
     serializer_class = PictureSerializer
 
@@ -33,28 +33,62 @@ class SightingPictureCreateView(ListCreateAPIView):
         request.data['sighting'] = kwargs.get('sighting_id')
         return super().create(request, *args, **kwargs)
 
-
-class SightingUserCommentsView(ListCreateAPIView):
+#Comments
+class SightingUserCommentCreateView(ListCreateAPIView):
     serializer_class = UserCommentSerializer
 
     def get_queryset(self):
-        sighting_id = self.kwargs['sighting_id']
-        comments = UserComment.objects.filter(sighting=sighting_id)
-        return comments
+        sighting_id = self.kwargs.get('sighting_id')
+        return UserComment.objects.filter(sighting__pk=sighting_id)
 
-    def post(self, sighting_id):
-        #sighting_id = self.kwargs['sighting_id']
+    def create(self, request, *args, **kwargs):
+        request.data['sighting'] = kwargs.get('sighting_id')
+        return super().create(request, *args, **kwargs)
 
-        if not Sighting.objects.exists(id=sighting_id):
-            return None
 
-        sighting = Sighting.objects.get(id=sighting_id)
+class SightingExpertCommentListCreateView(ListCreateAPIView):
+    serializer_class = UserCommentSerializer
 
-        new_comment = UserComment(
-                body='pruebahehehe',
-                sighting=sighting,
-        )
+    def get_queryset(self):
+        sighting_id = self.kwargs.get('sighting_id')
+        return ExpertComment.objects.filter(sighting__pk=sighting_id)
 
-        new_comment.save()
+    def create(self, request, *args, **kwargs):
+        request.data['sighting'] = kwargs.get('sighting_id')
+        return super().create(request, *args, **kwargs)
 
-        return new_comment
+#Locations
+class LocationsList(ListAPIView):
+    serializer_class = LocationSerializer
+
+    def get_queryset(self):
+        return Location.objects;
+
+#Questions&Answers
+class SightingQuestionsListView(ListAPIView):
+    serializer_class = QuestionSerializer
+
+    def get_queryset(self):
+        sighting_id = self.kwargs.get('sighting_id')
+        sighting_type = Sighting.objects.filter(id=sighting_id)
+        return Question.objects.filter(sighting_type=sighting_type)
+
+class SightingAnswerRetrieveUpdate(RetrieveUpdateAPIView):
+    serializer_class = AnswerSerializer
+
+    def get_queryset(self):
+        sighting_id = self.kwargs.get('sighting_id')
+        sighting_type = Sighting.objects.filter(id=sighting_id)
+        questions = Question.objects.filter(type=sighting_type)
+        answers = Answer.objects.filter(question IN questions)
+
+class SightingQuestionsCreateView(ListCreateAPIView):
+    serializer_class = UserCommentSerializer
+
+    def get_queryset(self):
+        sighting_id = self.kwargs.get('sighting_id')
+        return ExpertComment.objects.filter(sighting__pk=sighting_id)
+
+    def create(self, request, *args, **kwargs):
+        request.data['sighting'] = kwargs.get('sighting_id')
+        return super().create(request, *args, **kwargs)
