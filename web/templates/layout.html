@@ -13,8 +13,14 @@
   <script src="{% static "js/main.min.js" %}"></script>
 </head>
 <body>
+  <div class="container">
   {% include "components/navbar.html"%}
+  </div>
+  <div class="container">
   {% block body %}{% endblock %}
+  </div>
+  <div class="container">
   {% include "components/footer.html" %}
+  </div>
 </body>
 </html>

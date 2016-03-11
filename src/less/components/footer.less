@@ -1,0 +1,53 @@
+@footer-color: #ffffff; // Appears 2 times
+
+.footer-distributed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  font: normal 16px sans-serif;
+  margin-top: 80px;
+  text-align: left;
+
+  .footer-left {
+    p {
+      color: #8f9296;
+      font-size: 14px;
+      margin: 0;
+    }
+    p.footer-links {
+      line-height: 1.8;
+    }
+  }
+  p.footer-links {
+    color: @brand-bg-color;
+    font-size:18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    padding: 0;
+    a {
+      color: inherit;
+      display:inline-block;
+      line-height: 1.8;
+      text-decoration: none;
+    }
+  }
+  .footer-right {
+    float: none;
+    float: right;
+    margin-top: 6px;
+    margin: 0 auto 20px;
+    max-width: 180px;
+    a {
+      background-color: #33383b;
+      border-radius: 2px;
+      color: @brand-bg-color;
+      display: inline-block;
+      font-size: 20px;
+      height: 35px;
+      line-height: 35px;
+      margin-left: 3px;
+      text-align: center;
+      width: 35px;
+    }
+  }
+}
