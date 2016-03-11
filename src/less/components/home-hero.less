@@ -1,7 +1,43 @@
 .home-hero {
   position: relative;
+  margin-bottom: 90px;
+  .home-title{
+    background-color: rgba(0,0,0,.2);
+    position: absolute;
+    top: 0;
+    color: #FFF;
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+    h1 {
+      text-align: center;
+      width: auto;
+      margin-top: 50px;
+      font-size: 6em;
+      text-shadow: 0 0 7px rgba(0, 0, 0, .8);
+      @media screen and (max-width: @screen-md-max) {
+        font-size: 4em;
+      }
+    }
+  }
+
+  .carousel {
+    .carousel-caption {
+      padding-bottom: 300px;
+    }
+  }
+
   .camera-button-container {
     position: absolute;
-    bottom: -70px;
+    z-index: 99999999999;
+
+    @media screen and (max-width: @screen-xs-max) {
+      top: 74%;
+    }
+
+    @media screen and (min-width: @screen-lg-min) {
+      top: 390px;
+    }
   }
+
 }
