@@ -15,7 +15,7 @@ var paths = {
   dist: 'vespapp/staticfiles/'
 };
 
-gulp.task('default', ['less', 'scripts']);
+gulp.task('default', ['less', 'fonts', 'scripts']);
 
 gulp.task('develop', ['default', 'watch']);
 
@@ -31,6 +31,13 @@ gulp.task('scripts', function() {
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(path.join(paths.dist, 'js/')));
 });
+
+
+gulp.task('fonts', function() {
+  gulp.src('./bower_components/font-awesome/fonts/**/*.{ttf,woff,woff2,eof,svg}')
+    .pipe(gulp.dest('./vespapp/staticfiles/css/fonts'));
+});
+
 
 gulp.task('watch', function() {
   // main task
