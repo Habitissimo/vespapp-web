@@ -1,10 +1,15 @@
 from django.conf.urls import url
 from web import views
 from web.views import HomePageView
+from web.views import FAQView
+from web.views import SightingExpertCommentsView
 
 
 urlpatterns = [
     url(r'^$', HomePageView.as_view(), name='home'),
+    url(r'^faq/$', FAQView.as_view(), name='faq'),
+    url(r'^sighting/(?P<sighting_id>[0-9]+)/expert_comments/$',
+    	SightingExpertCommentsView.as_view(), name='sighting_expert_comments'),
 #    url(r'^sightings/$', views.sightings),
 #
 #    url(r'^sightings/(?P<sighting_id>[0-9]+)/$',
