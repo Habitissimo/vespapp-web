@@ -38,7 +38,7 @@ class SightingPictureCreateView(ListCreateAPIView):
 
 
 # Comments
-class SightingUserCommentCreateView(ListCreateAPIView):
+class SightingUserCommentsListView(ListCreateAPIView):
     serializer_class = UserCommentSerializer
 
     def get_queryset(self):
@@ -50,8 +50,9 @@ class SightingUserCommentCreateView(ListCreateAPIView):
         return super().create(request, *args, **kwargs)
 
 
-class SightingExpertCommentListCreateView(ListCreateAPIView):
-    serializer_class = UserCommentSerializer
+# Expert comments
+class SightingExpertCommentsListView(ListCreateAPIView):
+    serializer_class = ExpertCommentSerializer
 
     def get_queryset(self):
         sighting_id = self.kwargs.get('sighting_id')

@@ -12,6 +12,12 @@ urlpatterns = [
     url(r'^sightings/(?P<sighting_id>[0-9]+)/questions/$', api_views.SightingQuestionsListView.as_view(),
         name='sightings_questions'),
 
+    url(r'^sightings/(?P<sighting_id>[0-9]+)/user_comments/$', api_views.SightingUserCommentsListView.as_view(),
+        name='sightings_user_comments'),
+
+    url(r'^sightings/(?P<sighting_id>[0-9]+)/expert_comments/$', api_views.SightingExpertCommentsListView.as_view(),
+        name='sightings_expert_comments'),
+
     url(r'locations/', api_views.LocationsList.as_view(), name='location_list')
 
 ]
