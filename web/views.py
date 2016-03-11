@@ -22,3 +22,6 @@ class SightingsView(TemplateView):
 
 class SightQuestionView(TemplateView):
     template_name = "sight_question.html"
+
+class LocationsPageView(TemplateView):
+    template_name = "locations.html"
