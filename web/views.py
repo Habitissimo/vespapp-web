@@ -1,6 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.generic.base import TemplateView
+from django.views.generic.list import ListView
+from django.views.generic.detail import DetailView
+
+from api.models import Sighting
+from api.models import UserComment
 
 class HomePageView(TemplateView):
     template_name = "home.html"
@@ -8,23 +13,47 @@ class HomePageView(TemplateView):
 class FAQView(TemplateView):
     template_name = "faq.html"
 
-class SightingExpertCommentsView(TemplateView):
-    template_name = "sighting_expert_comments.html"
+class SightingView(DetailView):
+    template_name = "sighting.html"  
+    pk_url_kwarg = 'sighting_id'
+    model = Sighting
 
-class SightingView(TemplateView):
-    template_name = "sighting.html"
+class SightingsView(ListView):
+    template_name = "sightings.html"   
+    
+    def get_queryset(self, **kwargs):
+     	return Sighting.objects.all()
 
-class SightingsView(TemplateView):
-    template_name = "sightings.html"
-
-class SightQuestionView(TemplateView):
+class SightQuestionView(DetailView):
     template_name = "sight_question.html"
 
 class LocationsPageView(TemplateView):
     template_name = "locations.html"
 
-class SightingCommentsView(TemplateView):
-	template_name = "sighting_comments.html"
 
-class SightExpertCommentView(TemplateView):
+class SightingCommentView(DetailView):
+    template_name = "sighting_comment.html"
+    template_name_field = 'object'
+    model = UserComment
+      
+    def get_object(self, queryset=None):
+        sighting_id = self.kwargs.get('sighting_id')
+        comment_id = self.kwargs.get('comment_id')
+
+        sighting = Sighting.objects.get(pk=sighting_id)
+        comment = UserComment.objects.get(pk=comment_id)
+
+        if str(comment.sighting.id) != str(sighting_id):
+            return None
+
+        return comment
+
+
+class SightingCommentsView(ListView):
+	template_name = "sighting_comments.html"
+	
+class SightExpertCommentView(DetailView):
 	template_name = "sight_expert_comment.html"
+
+class SightingExpertCommentsView(ListView):
+    template_name = "sighting_expert_comments.html"
