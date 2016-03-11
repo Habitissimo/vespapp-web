@@ -1,0 +1,30 @@
+{% load template %}
+{% load staticfiles %}
+<div class="row">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="{% static "img/avispa_logo.png" %}" width="45" height="45" alt="My image"/>
+          <span>Avispissimo</span>
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="main-navbar">
+        <ul class="nav navbar-nav">
+          <li class="{% active 'home' %}"><a href="{% url 'home' %}">Home</a></li>
+          <li class="{% active 'sightings' %}"><a href="{% url 'sightings' %}">Avistamientos</a></li>
+          <li class="{% active 'faq' %}"><a href="{% url 'faq' %}">FAQ</a></li>
+          <li class="{% active 'locations' %}"><a href="{% url 'locations' %}">Localizaciones</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</div>

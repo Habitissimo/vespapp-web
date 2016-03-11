@@ -1,6 +1,4 @@
-from rest_framework import status
 from rest_framework.generics import ListCreateAPIView, RetrieveUpdateAPIView
-from rest_framework.response import Response
 
 from api.models import Sighting, Picture
 from api.serializers import SightingSerializer, PictureSerializer

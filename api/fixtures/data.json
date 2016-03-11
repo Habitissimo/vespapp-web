@@ -1,0 +1,1980 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 17,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 18,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 19,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 20,
+  "fields": {
+    "app_label": "api",
+    "model": "location"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 21,
+  "fields": {
+    "app_label": "api",
+    "model": "question"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 22,
+  "fields": {
+    "app_label": "api",
+    "model": "answer"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 23,
+  "fields": {
+    "app_label": "api",
+    "model": "sighting"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 24,
+  "fields": {
+    "app_label": "api",
+    "model": "picture"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 25,
+  "fields": {
+    "app_label": "api",
+    "model": "expertcomment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 26,
+  "fields": {
+    "app_label": "api",
+    "model": "usercomment"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "22r881ct80ffv7vugwwe9bl9nu2d7rpj",
+  "fields": {
+    "session_data": "ZTNjZjZjNDI1M2Q1NjAwMjc3NmI2YzI3MmI0MGFjMmE1M2JhMTZiMzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiNThlNzNmN2ZhOGZhZjFhODMyNzc0MjE2ZmRhNzdhYWNjZmI2OGIzNCIsIl9hdXRoX3VzZXJfaWQiOiIyIn0=",
+    "expire_date": "2016-03-25T15:44:34.763Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "6a5qvju8xfrmzxzm9il3ppu8e6p01ifr",
+  "fields": {
+    "session_data": "ZTNjZjZjNDI1M2Q1NjAwMjc3NmI2YzI3MmI0MGFjMmE1M2JhMTZiMzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiNThlNzNmN2ZhOGZhZjFhODMyNzc0MjE2ZmRhNzdhYWNjZmI2OGIzNCIsIl9hdXRoX3VzZXJfaWQiOiIyIn0=",
+    "expire_date": "2016-03-25T15:44:54.290Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "6irtl916xmjk0fw8n14musyzz2z3ju0z",
+  "fields": {
+    "session_data": "MTA1Njk4ZmU5ZWY3ZDIwNjkyNTQyZGMwYTAyNzI2ZGVkZTViYmRhYjp7Il9hdXRoX3VzZXJfaGFzaCI6IjU4ZTczZjdmYThmYWYxYTgzMjc3NDIxNmZkYTc3YWFjY2ZiNjhiMzQiLCJfYXV0aF91c2VyX2lkIjoiMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+    "expire_date": "2016-03-25T16:18:33.913Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "bux4st0cvhvegzt0oqd8acrw914ys7eq",
+  "fields": {
+    "session_data": "MTA1Njk4ZmU5ZWY3ZDIwNjkyNTQyZGMwYTAyNzI2ZGVkZTViYmRhYjp7Il9hdXRoX3VzZXJfaGFzaCI6IjU4ZTczZjdmYThmYWYxYTgzMjc3NDIxNmZkYTc3YWFjY2ZiNjhiMzQiLCJfYXV0aF91c2VyX2lkIjoiMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+    "expire_date": "2016-03-25T16:17:10.353Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "i07p1t89x9lj9cbpcq69kqjtpz9qwaqs",
+  "fields": {
+    "session_data": "MTA1Njk4ZmU5ZWY3ZDIwNjkyNTQyZGMwYTAyNzI2ZGVkZTViYmRhYjp7Il9hdXRoX3VzZXJfaGFzaCI6IjU4ZTczZjdmYThmYWYxYTgzMjc3NDIxNmZkYTc3YWFjY2ZiNjhiMzQiLCJfYXV0aF91c2VyX2lkIjoiMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+    "expire_date": "2016-03-25T16:18:46.589Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "of6at86nec17xaqahyzp90oxz081aafj",
+  "fields": {
+    "session_data": "MTA1Njk4ZmU5ZWY3ZDIwNjkyNTQyZGMwYTAyNzI2ZGVkZTViYmRhYjp7Il9hdXRoX3VzZXJfaGFzaCI6IjU4ZTczZjdmYThmYWYxYTgzMjc3NDIxNmZkYTc3YWFjY2ZiNjhiMzQiLCJfYXV0aF91c2VyX2lkIjoiMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+    "expire_date": "2016-03-25T16:18:31.718Z"
+  }
+},
+{
+  "model": "api.question",
+  "pk": 6,
+  "fields": {
+    "title": "Rb-Av-Cu\u00e1nto mide la avispa?",
+    "question_type": 1,
+    "sighting_type": 1,
+    "is_active": true,
+    "created_at": "2016-03-11T15:45:26.132Z",
+    "updated_at": "2016-03-11T15:45:26.132Z"
+  }
+},
+{
+  "model": "api.question",
+  "pk": 7,
+  "fields": {
+    "title": "pregunta 2 (checkbox niu)",
+    "question_type": 2,
+    "sighting_type": 2,
+    "is_active": true,
+    "created_at": "2016-03-11T15:46:08.316Z",
+    "updated_at": "2016-03-11T15:46:08.316Z"
+  }
+},
+{
+  "model": "api.question",
+  "pk": 8,
+  "fields": {
+    "title": "Rb-Av-C\u00f3mo?",
+    "question_type": 1,
+    "sighting_type": 1,
+    "is_active": true,
+    "created_at": "2016-03-11T15:46:37.578Z",
+    "updated_at": "2016-03-11T15:46:37.578Z"
+  }
+},
+{
+  "model": "api.question",
+  "pk": 9,
+  "fields": {
+    "title": "pregunta 1 (checkbox niu)",
+    "question_type": 2,
+    "sighting_type": 2,
+    "is_active": true,
+    "created_at": "2016-03-11T15:46:40.116Z",
+    "updated_at": "2016-03-11T15:46:40.116Z"
+  }
+},
+{
+  "model": "api.question",
+  "pk": 10,
+  "fields": {
+    "title": "pregunta 3 (checkbox niu)",
+    "question_type": 2,
+    "sighting_type": 2,
+    "is_active": true,
+    "created_at": "2016-03-11T15:46:51.684Z",
+    "updated_at": "2016-03-11T15:46:51.684Z"
+  }
+},
+{
+  "model": "api.question",
+  "pk": 11,
+  "fields": {
+    "title": "pregunta 3 (checkbox niu) noactiva",
+    "question_type": 2,
+    "sighting_type": 2,
+    "is_active": false,
+    "created_at": "2016-03-11T15:47:24.451Z",
+    "updated_at": "2016-03-11T15:47:24.451Z"
+  }
+},
+{
+  "model": "api.question",
+  "pk": 12,
+  "fields": {
+    "title": "Cb-Av-Qu\u00e9 hac\u00eda?",
+    "question_type": 2,
+    "sighting_type": 1,
+    "is_active": true,
+    "created_at": "2016-03-11T15:47:35.637Z",
+    "updated_at": "2016-03-11T15:47:35.637Z"
+  }
+},
+{
+  "model": "api.question",
+  "pk": 13,
+  "fields": {
+    "title": "pregunta 5 (radio niu)",
+    "question_type": 1,
+    "sighting_type": 2,
+    "is_active": true,
+    "created_at": "2016-03-11T15:48:41.224Z",
+    "updated_at": "2016-03-11T15:48:41.224Z"
+  }
+},
+{
+  "model": "api.question",
+  "pk": 14,
+  "fields": {
+    "title": "Rb-Ni-Es un nido muy muy grande?",
+    "question_type": 2,
+    "sighting_type": 2,
+    "is_active": true,
+    "created_at": "2016-03-11T15:51:28.452Z",
+    "updated_at": "2016-03-11T15:51:28.452Z"
+  }
+},
+{
+  "model": "api.question",
+  "pk": 15,
+  "fields": {
+    "title": "Rb-Ni-De que color es el nidazo?",
+    "question_type": 2,
+    "sighting_type": 2,
+    "is_active": true,
+    "created_at": "2016-03-11T15:51:49.798Z",
+    "updated_at": "2016-03-11T15:51:49.798Z"
+  }
+},
+{
+  "model": "api.question",
+  "pk": 16,
+  "fields": {
+    "title": "Cb-Ni-Es verde?",
+    "question_type": 1,
+    "sighting_type": 2,
+    "is_active": true,
+    "created_at": "2016-03-11T15:52:29.885Z",
+    "updated_at": "2016-03-11T15:52:29.885Z"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 2,
+  "fields": {
+    "question": 6,
+    "value": "<2cm",
+    "created_at": "2016-03-11T15:50:35.929Z",
+    "updated_at": "2016-03-11T15:50:35.929Z"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 3,
+  "fields": {
+    "question": 6,
+    "value": "2-3cm",
+    "created_at": "2016-03-11T15:50:49.802Z",
+    "updated_at": "2016-03-11T15:50:49.802Z"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 4,
+  "fields": {
+    "question": 6,
+    "value": "3-4cm",
+    "created_at": "2016-03-11T15:50:58.241Z",
+    "updated_at": "2016-03-11T15:50:58.241Z"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 5,
+  "fields": {
+    "question": 6,
+    "value": ">4cm",
+    "created_at": "2016-03-11T15:51:04.281Z",
+    "updated_at": "2016-03-11T15:51:04.281Z"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 6,
+  "fields": {
+    "question": 12,
+    "value": "Volaba",
+    "created_at": "2016-03-11T15:51:28.013Z",
+    "updated_at": "2016-03-11T15:51:28.013Z"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 7,
+  "fields": {
+    "question": 12,
+    "value": "Cazaba",
+    "created_at": "2016-03-11T15:52:17.064Z",
+    "updated_at": "2016-03-11T15:52:17.064Z"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 8,
+  "fields": {
+    "question": 12,
+    "value": "Com\u00eda fruta",
+    "created_at": "2016-03-11T15:52:34.611Z",
+    "updated_at": "2016-03-11T15:52:34.611Z"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 9,
+  "fields": {
+    "question": 12,
+    "value": "Me pic\u00f3 la muy *****",
+    "created_at": "2016-03-11T15:52:42.212Z",
+    "updated_at": "2016-03-11T15:52:42.213Z"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 10,
+  "fields": {
+    "question": 8,
+    "value": "Bien",
+    "created_at": "2016-03-11T15:53:12.446Z",
+    "updated_at": "2016-03-11T15:53:12.446Z"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 11,
+  "fields": {
+    "question": 8,
+    "value": "Mal",
+    "created_at": "2016-03-11T15:53:19.071Z",
+    "updated_at": "2016-03-11T15:53:19.071Z"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 12,
+  "fields": {
+    "question": 8,
+    "value": "Regular",
+    "created_at": "2016-03-11T15:53:23.551Z",
+    "updated_at": "2016-03-11T15:53:23.551Z"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 13,
+  "fields": {
+    "question": 14,
+    "value": "Si",
+    "created_at": "2016-03-11T15:53:44.472Z",
+    "updated_at": "2016-03-11T15:53:44.472Z"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 14,
+  "fields": {
+    "question": 15,
+    "value": "Rojo",
+    "created_at": "2016-03-11T15:54:26.581Z",
+    "updated_at": "2016-03-11T15:54:26.581Z"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 15,
+  "fields": {
+    "question": 15,
+    "value": "Magenta verdoso",
+    "created_at": "2016-03-11T15:55:01.853Z",
+    "updated_at": "2016-03-11T15:55:01.853Z"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 16,
+  "fields": {
+    "question": 15,
+    "value": "Muy amarillento y verde con una pizca de rojo",
+    "created_at": "2016-03-11T15:55:29.552Z",
+    "updated_at": "2016-03-11T15:55:29.552Z"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 17,
+  "fields": {
+    "question": 7,
+    "value": "resposta 2-1",
+    "created_at": "2016-03-11T15:56:35.426Z",
+    "updated_at": "2016-03-11T15:56:35.426Z"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 18,
+  "fields": {
+    "question": 7,
+    "value": "resposta 2-2",
+    "created_at": "2016-03-11T15:56:41.631Z",
+    "updated_at": "2016-03-11T15:56:41.631Z"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 19,
+  "fields": {
+    "question": 7,
+    "value": "resposta 2-3",
+    "created_at": "2016-03-11T15:56:49.362Z",
+    "updated_at": "2016-03-11T15:56:49.362Z"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 20,
+  "fields": {
+    "question": 9,
+    "value": "resposta 1-1",
+    "created_at": "2016-03-11T15:57:11.578Z",
+    "updated_at": "2016-03-11T15:57:11.578Z"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 21,
+  "fields": {
+    "question": 9,
+    "value": "resposta 1-2",
+    "created_at": "2016-03-11T15:57:18.655Z",
+    "updated_at": "2016-03-11T15:57:18.655Z"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 22,
+  "fields": {
+    "question": 10,
+    "value": "resposta 3-1",
+    "created_at": "2016-03-11T15:57:56.229Z",
+    "updated_at": "2016-03-11T15:57:56.229Z"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 23,
+  "fields": {
+    "question": 10,
+    "value": "resposta 3-2",
+    "created_at": "2016-03-11T15:58:05.789Z",
+    "updated_at": "2016-03-11T15:58:05.789Z"
+  }
+},
+{
+  "model": "api.answer",
+  "pk": 24,
+  "fields": {
+    "question": 14,
+    "value": "mucho",
+    "created_at": "2016-03-11T16:26:16.909Z",
+    "updated_at": "2016-03-11T16:26:16.909Z"
+  }
+},
+{
+  "model": "api.picture",
+  "pk": 1,
+  "fields": {
+    "file": "sightings/tarantino.jpg",
+    "sighting": 2,
+    "created_at": "2016-03-11T16:23:06.134Z",
+    "updated_at": "2016-03-11T16:23:06.134Z"
+  }
+},
+{
+  "model": "api.picture",
+  "pk": 2,
+  "fields": {
+    "file": "sightings/snapshot88.png",
+    "sighting": 3,
+    "created_at": "2016-03-11T16:23:22.492Z",
+    "updated_at": "2016-03-11T16:23:22.492Z"
+  }
+},
+{
+  "model": "api.picture",
+  "pk": 3,
+  "fields": {
+    "file": "sightings/10628325_10204156517806121_988494596058692644_n.jpg",
+    "sighting": 4,
+    "created_at": "2016-03-11T16:23:57.529Z",
+    "updated_at": "2016-03-11T16:23:57.529Z"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 14,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 14,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 14,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 15,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 15,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 15,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 16,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 16,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 16,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 17,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 17,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 17,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 18,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 18,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 18,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 19,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 19,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 19,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can add location",
+    "content_type": 20,
+    "codename": "add_location"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can change location",
+    "content_type": 20,
+    "codename": "change_location"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can delete location",
+    "content_type": 20,
+    "codename": "delete_location"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add question",
+    "content_type": 21,
+    "codename": "add_question"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change question",
+    "content_type": 21,
+    "codename": "change_question"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete question",
+    "content_type": 21,
+    "codename": "delete_question"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can add answer",
+    "content_type": 22,
+    "codename": "add_answer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can change answer",
+    "content_type": 22,
+    "codename": "change_answer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can delete answer",
+    "content_type": 22,
+    "codename": "delete_answer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can add sighting",
+    "content_type": 23,
+    "codename": "add_sighting"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can change sighting",
+    "content_type": 23,
+    "codename": "change_sighting"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 69,
+  "fields": {
+    "name": "Can delete sighting",
+    "content_type": 23,
+    "codename": "delete_sighting"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 70,
+  "fields": {
+    "name": "Can add picture",
+    "content_type": 24,
+    "codename": "add_picture"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 71,
+  "fields": {
+    "name": "Can change picture",
+    "content_type": 24,
+    "codename": "change_picture"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 72,
+  "fields": {
+    "name": "Can delete picture",
+    "content_type": 24,
+    "codename": "delete_picture"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 73,
+  "fields": {
+    "name": "Can add expert comment",
+    "content_type": 25,
+    "codename": "add_expertcomment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 74,
+  "fields": {
+    "name": "Can change expert comment",
+    "content_type": 25,
+    "codename": "change_expertcomment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 75,
+  "fields": {
+    "name": "Can delete expert comment",
+    "content_type": 25,
+    "codename": "delete_expertcomment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 76,
+  "fields": {
+    "name": "Can add user comment",
+    "content_type": 26,
+    "codename": "add_usercomment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 77,
+  "fields": {
+    "name": "Can change user comment",
+    "content_type": 26,
+    "codename": "change_usercomment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 78,
+  "fields": {
+    "name": "Can delete user comment",
+    "content_type": 26,
+    "codename": "delete_usercomment"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$24000$E5yjNYlKfhuF$JpRnQqT05owVkQjmOb/68UU9Rq61XbxANpmpMsHe5l4=",
+    "last_login": "2016-03-11T16:18:46.587Z",
+    "is_superuser": true,
+    "username": "ionic",
+    "first_name": "",
+    "last_name": "",
+    "email": "dgahjsdfgdskjf@bfhdjsk.es",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2016-03-11T15:44:30.064Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$24000$E4oFETrnORwd$kWnqoAwaN/Tg1r7ez7wWIyW4AgLdehaSbNVuE8ZJphI=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "visitor1",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2016-03-11T16:19:10.280Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$24000$1VmWpD2xa147$SQBJQAzqLHEbOOP3xRrAg8WHKDUfSJOq8Yg/xZiElAc=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "expert1",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2016-03-11T16:19:20.067Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "api.sighting",
+  "pk": 2,
+  "fields": {
+    "lat": 1.2052,
+    "lng": 2.324,
+    "location": null,
+    "status": 0,
+    "free_text": "Aqu\u00ed cerca",
+    "type": 1,
+    "public": false,
+    "reported_by": null,
+    "moderator": null,
+    "is_valid": null,
+    "created_at": "2016-03-11T16:07:11.216Z",
+    "updated_at": "2016-03-11T16:07:11.216Z",
+    "answers": []
+  }
+},
+{
+  "model": "api.sighting",
+  "pk": 3,
+  "fields": {
+    "lat": 3.12312,
+    "lng": 12.123123,
+    "location": null,
+    "status": 1,
+    "free_text": "Aqu\u00ed cerca",
+    "type": 1,
+    "public": false,
+    "reported_by": null,
+    "moderator": null,
+    "is_valid": null,
+    "created_at": "2016-03-11T16:14:28.916Z",
+    "updated_at": "2016-03-11T16:14:28.916Z",
+    "answers": []
+  }
+},
+{
+  "model": "api.sighting",
+  "pk": 4,
+  "fields": {
+    "lat": -3.0,
+    "lng": -4.0,
+    "location": null,
+    "status": 3,
+    "free_text": "No se que hacer",
+    "type": 1,
+    "public": false,
+    "reported_by": null,
+    "moderator": null,
+    "is_valid": false,
+    "created_at": "2016-03-11T16:16:39.177Z",
+    "updated_at": "2016-03-11T16:16:39.177Z",
+    "answers": [
+      5,
+      7,
+      15
+    ]
+  }
+},
+{
+  "model": "api.sighting",
+  "pk": 5,
+  "fields": {
+    "lat": 18.0,
+    "lng": 8.0,
+    "location": null,
+    "status": 0,
+    "free_text": "Al lado de mi casa",
+    "type": 2,
+    "public": false,
+    "reported_by": 4,
+    "moderator": 2,
+    "is_valid": true,
+    "created_at": "2016-03-11T16:24:27.299Z",
+    "updated_at": "2016-03-11T16:24:27.299Z",
+    "answers": [
+      16
+    ]
+  }
+},
+{
+  "model": "api.expertcomment",
+  "pk": 1,
+  "fields": {
+    "user": 4,
+    "sighting": 3,
+    "body": "Creo que es la leche",
+    "is_valid": true,
+    "created_at": "2016-03-11T16:19:34.555Z",
+    "updated_at": "2016-03-11T16:19:34.555Z"
+  }
+},
+{
+  "model": "api.expertcomment",
+  "pk": 2,
+  "fields": {
+    "user": 4,
+    "sighting": 2,
+    "body": "exp 1 sigh 2 unkdnown",
+    "is_valid": null,
+    "created_at": "2016-03-11T16:19:45.612Z",
+    "updated_at": "2016-03-11T16:19:45.612Z"
+  }
+},
+{
+  "model": "api.expertcomment",
+  "pk": 3,
+  "fields": {
+    "user": 4,
+    "sighting": 4,
+    "body": "Es una hormiga, no una avispa.",
+    "is_valid": false,
+    "created_at": "2016-03-11T16:19:51.561Z",
+    "updated_at": "2016-03-11T16:19:51.561Z"
+  }
+},
+{
+  "model": "api.expertcomment",
+  "pk": 4,
+  "fields": {
+    "user": 2,
+    "sighting": 2,
+    "body": "Yo creo que si, que alguien lo confirme",
+    "is_valid": null,
+    "created_at": "2016-03-11T16:19:53.429Z",
+    "updated_at": "2016-03-11T16:19:53.429Z"
+  }
+},
+{
+  "model": "api.expertcomment",
+  "pk": 5,
+  "fields": {
+    "user": 2,
+    "sighting": 3,
+    "body": "pa k kieres saber eso jaja salu2",
+    "is_valid": null,
+    "created_at": "2016-03-11T16:20:35.500Z",
+    "updated_at": "2016-03-11T16:20:35.500Z"
+  }
+},
+{
+  "model": "api.expertcomment",
+  "pk": 6,
+  "fields": {
+    "user": 4,
+    "sighting": 3,
+    "body": "Pues va a ser que si",
+    "is_valid": true,
+    "created_at": "2016-03-11T16:20:46.637Z",
+    "updated_at": "2016-03-11T16:20:48.898Z"
+  }
+},
+{
+  "model": "api.expertcomment",
+  "pk": 7,
+  "fields": {
+    "user": 4,
+    "sighting": 3,
+    "body": "yo k se tio xddd",
+    "is_valid": null,
+    "created_at": "2016-03-11T16:21:21.564Z",
+    "updated_at": "2016-03-11T16:21:21.564Z"
+  }
+},
+{
+  "model": "api.expertcomment",
+  "pk": 8,
+  "fields": {
+    "user": 4,
+    "sighting": 2,
+    "body": "n t raies loko",
+    "is_valid": null,
+    "created_at": "2016-03-11T16:21:34.050Z",
+    "updated_at": "2016-03-11T16:21:34.050Z"
+  }
+},
+{
+  "model": "api.expertcomment",
+  "pk": 9,
+  "fields": {
+    "user": 3,
+    "sighting": 3,
+    "body": "es un elefante",
+    "is_valid": false,
+    "created_at": "2016-03-11T16:23:45.053Z",
+    "updated_at": "2016-03-11T16:23:45.053Z"
+  }
+},
+{
+  "model": "api.usercomment",
+  "pk": 1,
+  "fields": {
+    "user": 3,
+    "sighting": 2,
+    "body": "Mis dies",
+    "moderated": false,
+    "created_at": "2016-03-11T16:20:36.309Z",
+    "updated_at": "2016-03-11T16:20:36.309Z"
+  }
+},
+{
+  "model": "api.usercomment",
+  "pk": 2,
+  "fields": {
+    "user": 3,
+    "sighting": 4,
+    "body": "Esa avispa es muy grande. Xat ia",
+    "moderated": true,
+    "created_at": "2016-03-11T16:21:13.902Z",
+    "updated_at": "2016-03-11T16:21:13.902Z"
+  }
+},
+{
+  "model": "api.usercomment",
+  "pk": 3,
+  "fields": {
+    "user": 3,
+    "sighting": 3,
+    "body": "Yo tambi\u00e9n he visto una muy silimar all\u00ed cerca.",
+    "moderated": true,
+    "created_at": "2016-03-11T16:22:15.985Z",
+    "updated_at": "2016-03-11T16:22:15.985Z"
+  }
+},
+{
+  "model": "api.usercomment",
+  "pk": 4,
+  "fields": {
+    "user": 3,
+    "sighting": 5,
+    "body": "Yo creo que he visto 3",
+    "moderated": false,
+    "created_at": "2016-03-11T16:25:04.930Z",
+    "updated_at": "2016-03-11T16:25:04.930Z"
+  }
+},
+{
+  "model": "api.usercomment",
+  "pk": 5,
+  "fields": {
+    "user": 2,
+    "sighting": 3,
+    "body": "Era muy grande y muy gorda...",
+    "moderated": false,
+    "created_at": "2016-03-11T16:25:24.514Z",
+    "updated_at": "2016-03-11T16:25:24.514Z"
+  }
+},
+{
+  "model": "api.usercomment",
+  "pk": 6,
+  "fields": {
+    "user": 3,
+    "sighting": 5,
+    "body": "Tengo miedo, no quiero que se acerquen a mis hijos",
+    "moderated": false,
+    "created_at": "2016-03-11T16:25:54.539Z",
+    "updated_at": "2016-03-11T16:25:54.539Z"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2016-03-11T15:45:26.132Z",
+    "user": 2,
+    "content_type": 21,
+    "object_id": "6",
+    "object_repr": "Question object",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2016-03-11T15:46:08.317Z",
+    "user": 2,
+    "content_type": 21,
+    "object_id": "7",
+    "object_repr": "Question object",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2016-03-11T15:46:37.579Z",
+    "user": 2,
+    "content_type": 21,
+    "object_id": "8",
+    "object_repr": "Question object",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2016-03-11T15:46:40.117Z",
+    "user": 2,
+    "content_type": 21,
+    "object_id": "9",
+    "object_repr": "Question object",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2016-03-11T15:46:51.685Z",
+    "user": 2,
+    "content_type": 21,
+    "object_id": "10",
+    "object_repr": "Question object",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2016-03-11T15:47:24.451Z",
+    "user": 2,
+    "content_type": 21,
+    "object_id": "11",
+    "object_repr": "Question object",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2016-03-11T15:47:35.638Z",
+    "user": 2,
+    "content_type": 21,
+    "object_id": "12",
+    "object_repr": "Question object",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2016-03-11T15:48:41.225Z",
+    "user": 2,
+    "content_type": 21,
+    "object_id": "13",
+    "object_repr": "Question object",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2016-03-11T15:50:35.930Z",
+    "user": 2,
+    "content_type": 22,
+    "object_id": "2",
+    "object_repr": "<2cm",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2016-03-11T15:50:49.802Z",
+    "user": 2,
+    "content_type": 22,
+    "object_id": "3",
+    "object_repr": "2-3cm",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2016-03-11T15:50:58.242Z",
+    "user": 2,
+    "content_type": 22,
+    "object_id": "4",
+    "object_repr": "3-4cm",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2016-03-11T15:51:04.282Z",
+    "user": 2,
+    "content_type": 22,
+    "object_id": "5",
+    "object_repr": ">4cm",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2016-03-11T15:51:28.013Z",
+    "user": 2,
+    "content_type": 22,
+    "object_id": "6",
+    "object_repr": "Volaba",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2016-03-11T15:51:28.453Z",
+    "user": 2,
+    "content_type": 21,
+    "object_id": "14",
+    "object_repr": "Rb-Ni-Es un nido muy muy grande?",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2016-03-11T15:51:49.798Z",
+    "user": 2,
+    "content_type": 21,
+    "object_id": "15",
+    "object_repr": "Rb-Ni-De que color es el nidazo?",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2016-03-11T15:52:17.064Z",
+    "user": 2,
+    "content_type": 22,
+    "object_id": "7",
+    "object_repr": "Cazaba",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2016-03-11T15:52:29.886Z",
+    "user": 2,
+    "content_type": 21,
+    "object_id": "16",
+    "object_repr": "Cb-Ni-Es verde?",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2016-03-11T15:52:34.611Z",
+    "user": 2,
+    "content_type": 22,
+    "object_id": "8",
+    "object_repr": "Com\u00eda fruta",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2016-03-11T15:52:42.213Z",
+    "user": 2,
+    "content_type": 22,
+    "object_id": "9",
+    "object_repr": "Me pic\u00f3 la muy *****",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2016-03-11T15:53:12.447Z",
+    "user": 2,
+    "content_type": 22,
+    "object_id": "10",
+    "object_repr": "Bien",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2016-03-11T15:53:19.072Z",
+    "user": 2,
+    "content_type": 22,
+    "object_id": "11",
+    "object_repr": "Mal",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2016-03-11T15:53:23.552Z",
+    "user": 2,
+    "content_type": 22,
+    "object_id": "12",
+    "object_repr": "Regular",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2016-03-11T15:53:44.473Z",
+    "user": 2,
+    "content_type": 22,
+    "object_id": "13",
+    "object_repr": "Si",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2016-03-11T15:54:26.581Z",
+    "user": 2,
+    "content_type": 22,
+    "object_id": "14",
+    "object_repr": "Rojo",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2016-03-11T15:55:01.854Z",
+    "user": 2,
+    "content_type": 22,
+    "object_id": "15",
+    "object_repr": "Magenta verdoso",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2016-03-11T15:55:29.552Z",
+    "user": 2,
+    "content_type": 22,
+    "object_id": "16",
+    "object_repr": "Muy amarillento y verde con una pizca de rojo",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2016-03-11T15:56:35.426Z",
+    "user": 2,
+    "content_type": 22,
+    "object_id": "17",
+    "object_repr": "resposta 2-1",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2016-03-11T15:56:41.631Z",
+    "user": 2,
+    "content_type": 22,
+    "object_id": "18",
+    "object_repr": "resposta 2-2",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2016-03-11T15:56:49.362Z",
+    "user": 2,
+    "content_type": 22,
+    "object_id": "19",
+    "object_repr": "resposta 2-3",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2016-03-11T15:57:11.579Z",
+    "user": 2,
+    "content_type": 22,
+    "object_id": "20",
+    "object_repr": "resposta 1-1",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2016-03-11T15:57:18.655Z",
+    "user": 2,
+    "content_type": 22,
+    "object_id": "21",
+    "object_repr": "resposta 1-2",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2016-03-11T15:57:56.229Z",
+    "user": 2,
+    "content_type": 22,
+    "object_id": "22",
+    "object_repr": "resposta 3-1",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2016-03-11T15:58:05.790Z",
+    "user": 2,
+    "content_type": 22,
+    "object_id": "23",
+    "object_repr": "resposta 3-2",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2016-03-11T16:07:11.218Z",
+    "user": 2,
+    "content_type": 23,
+    "object_id": "2",
+    "object_repr": "2",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2016-03-11T16:14:28.923Z",
+    "user": 2,
+    "content_type": 23,
+    "object_id": "3",
+    "object_repr": "3",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2016-03-11T16:16:39.180Z",
+    "user": 2,
+    "content_type": 23,
+    "object_id": "4",
+    "object_repr": "4",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2016-03-11T16:19:10.309Z",
+    "user": 2,
+    "content_type": 17,
+    "object_id": "3",
+    "object_repr": "visitor1",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2016-03-11T16:19:20.093Z",
+    "user": 2,
+    "content_type": 17,
+    "object_id": "4",
+    "object_repr": "expert1",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2016-03-11T16:19:34.555Z",
+    "user": 2,
+    "content_type": 25,
+    "object_id": "1",
+    "object_repr": "Creo que es la leche",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2016-03-11T16:19:45.613Z",
+    "user": 2,
+    "content_type": 25,
+    "object_id": "2",
+    "object_repr": "exp 1 sigh 2 unkdnown",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2016-03-11T16:19:51.562Z",
+    "user": 2,
+    "content_type": 25,
+    "object_id": "3",
+    "object_repr": "Es una hormiga, no una avispa.",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2016-03-11T16:19:53.430Z",
+    "user": 2,
+    "content_type": 25,
+    "object_id": "4",
+    "object_repr": "Yo creo que si, que alguien lo confirme",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2016-03-11T16:20:35.501Z",
+    "user": 2,
+    "content_type": 25,
+    "object_id": "5",
+    "object_repr": "pa k kieres saber eso jaja salu2",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2016-03-11T16:20:36.310Z",
+    "user": 2,
+    "content_type": 26,
+    "object_id": "1",
+    "object_repr": "Mis dies",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2016-03-11T16:20:46.638Z",
+    "user": 2,
+    "content_type": 25,
+    "object_id": "6",
+    "object_repr": "Pues va a ser que si",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2016-03-11T16:20:48.899Z",
+    "user": 2,
+    "content_type": 25,
+    "object_id": "6",
+    "object_repr": "Pues va a ser que si",
+    "action_flag": 2,
+    "change_message": "No fields changed."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2016-03-11T16:21:13.902Z",
+    "user": 2,
+    "content_type": 26,
+    "object_id": "2",
+    "object_repr": "Esa avispa es muy grande. Xat ia",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2016-03-11T16:21:21.565Z",
+    "user": 2,
+    "content_type": 25,
+    "object_id": "7",
+    "object_repr": "yo k se tio xddd",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2016-03-11T16:21:34.051Z",
+    "user": 2,
+    "content_type": 25,
+    "object_id": "8",
+    "object_repr": "n t raies loko",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2016-03-11T16:22:15.985Z",
+    "user": 2,
+    "content_type": 26,
+    "object_id": "3",
+    "object_repr": "Yo tambi\u00e9n he visto una muy silimar all\u00ed cerca.",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2016-03-11T16:23:06.134Z",
+    "user": 2,
+    "content_type": 24,
+    "object_id": "1",
+    "object_repr": "Picture object",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2016-03-11T16:23:22.492Z",
+    "user": 2,
+    "content_type": 24,
+    "object_id": "2",
+    "object_repr": "Picture object",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2016-03-11T16:23:45.054Z",
+    "user": 2,
+    "content_type": 25,
+    "object_id": "9",
+    "object_repr": "es un elefante",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2016-03-11T16:23:57.529Z",
+    "user": 2,
+    "content_type": 24,
+    "object_id": "3",
+    "object_repr": "Picture object",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2016-03-11T16:24:27.302Z",
+    "user": 2,
+    "content_type": 23,
+    "object_id": "5",
+    "object_repr": "5",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2016-03-11T16:25:04.930Z",
+    "user": 2,
+    "content_type": 26,
+    "object_id": "4",
+    "object_repr": "Yo creo que he visto 3",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2016-03-11T16:25:24.514Z",
+    "user": 2,
+    "content_type": 26,
+    "object_id": "5",
+    "object_repr": "Era muy grande y muy gorda...",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2016-03-11T16:25:54.539Z",
+    "user": 2,
+    "content_type": 26,
+    "object_id": "6",
+    "object_repr": "Tengo miedo, no quiero que se acerquen a mis hijos",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2016-03-11T16:26:16.909Z",
+    "user": 2,
+    "content_type": 22,
+    "object_id": "24",
+    "object_repr": "mucho",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+}
+]

@@ -11,6 +11,9 @@ class Location(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Fecha de creación')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Fecha de modificación')
 
+    def __str__(self):
+        return self.name
+
 
 class Question(models.Model):
     TYPE_RADIO = 1
@@ -18,11 +21,14 @@ class Question(models.Model):
 
     title = models.CharField(max_length=128, null=False, blank=False, verbose_name='Título')
     question_type = models.IntegerField(verbose_name="Tipo de pregunta")
-
+    sighting_type = models.IntegerField(null=False, blank=False, verbose_name="Tipo de avistamiento")
     is_active = models.BooleanField(default=True, null=False, blank=False, verbose_name="Activa")
 
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Fecha de creación')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Fecha de modificación')
+
+    def __str__(self):
+        return self.title
 
 
 class Answer(models.Model):
@@ -33,12 +39,14 @@ class Answer(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Fecha de creación')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Fecha de modificación')
 
+    def __str__(self):
+        return self.value
+
 
 class Sighting(models.Model):
     STATUS_PENDING = 0
     STATUS_PROCESSING = 1
     STATUS_PROCESSED = 2
-    STATUS_DENIED = 3
 
     TYPE_WASP = 1
     TYPE_NEST = 2
@@ -58,11 +66,15 @@ class Sighting(models.Model):
                                     blank=True)
     moderator = models.ForeignKey(User, related_name="moderated_sightings", verbose_name='Moderador', null=True,
                                   blank=True)
+    is_valid = models.NullBooleanField(verbose_name="Avistamiento válido", null=True, default=None)
 
-    answers = models.ManyToManyField(Answer, related_name="sightings", null=True, blank=True)
+    answers = models.ManyToManyField(Answer, related_name="sightings", default=None, blank=True)
 
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Fecha de creación')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Fecha de modificación')
+
+    def __str__(self):
+        return "{}".format(self.id)
 
 
 class Picture(models.Model):
@@ -83,6 +95,9 @@ class ExpertComment(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Fecha de creación')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Fecha de modificación')
 
+    def __str__(self):
+        return self.body
+
 
 class UserComment(models.Model):
     user = models.ForeignKey(User, related_name="user_comments")
@@ -93,3 +108,6 @@ class UserComment(models.Model):
 
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Fecha de creación')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Fecha de modificación')
+
+    def __str__(self):
+        return self.body

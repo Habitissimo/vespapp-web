@@ -65,3 +65,17 @@ target/
 # Specific IDE files
 .idea
 *.sqlite3
+
+vespapp/media/*
+!vespapp/media/.gitkeep
+
+vespapp/static/*
+!vespapp/static/.gitkeep
+# Node modules
+node_modules/
+web/static/
+
+
+bower_components/
+vespapp/staticfiles/css/
+vespapp/staticfiles/js/

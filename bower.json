@@ -1,0 +1,26 @@
+{
+  "name": "avispamiento",
+  "description": "Plataforma web per a la detecció de la vespa asiàtica",
+  "main": "index.js",
+  "authors": [
+    "habitissimo"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Habitissimo/vespapp-web",
+  "moduleType": [
+    "amd"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "less": "^2.6.1",
+    "jquery": "^2.2.1"
+  }
+}
