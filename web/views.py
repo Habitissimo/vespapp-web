@@ -13,3 +13,7 @@ class SightingExpertCommentsView(TemplateView):
 
 #    def get_context_data(self, **kwargs):
 #        sighting_id = kwargs['sighting_id']
+
+class SightingView(TemplateView):
+    template_name = "sighting.html"
+
