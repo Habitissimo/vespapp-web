@@ -7,6 +7,16 @@
 
 {% block body %}
 
-<p>Hello</p>
+<h1>Preguntas frecuentes</h1>
+
+{% for faq in object_list %}
+    <h2>{{ faq.title }}</h2>
+    <p>{{ faq.body }} </h2>
+    {% if faq.image %}
+      <img src="{{ faq.image.url }}"/>
+    {% endif %}
+{% empty %}
+    <li>No articles yet.</li>
+{% endfor %}
 
 {% endblock %}

@@ -1,12 +1,15 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.generic.base import TemplateView
+from django.views.generic.list import ListView
+from api.models import SightingFAQ
 
 class HomePageView(TemplateView):
     template_name = "home.html"
 
-class FAQView(TemplateView):
+class FAQView(ListView):
     template_name = "faq.html"
+    model = SightingFAQ
 
 class SightingExpertCommentsView(TemplateView):
     template_name = "sighting_expert_comments.html"

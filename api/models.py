@@ -114,3 +114,12 @@ class UserComment(models.Model):
 
     def __str__(self):
         return self.body
+
+class SightingFAQ(models.Model):
+    title = models.CharField(null=False, blank=False, max_length=128, verbose_name='Título')
+    body = models.TextField()
+    image = models.ImageField(upload_to="faq_images/", blank=True, null=True)
+
+    def __str__(self):
+        return self.title
+
