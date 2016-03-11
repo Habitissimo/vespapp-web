@@ -12,38 +12,14 @@
     <h1 class="text-center"><i class="fa fa-question-circle"></i>Preguntas frecuentes</h1>
   </div>
   <div class="col-xs-12">
-    <h2 class="faq-title">¿Qué es la avispa asiática?</h2>
-    <p class="faq-content">
-    La avispa asiática (<i>Vespa velutina</i>) es una especie de avispa de la familia de los véspidos originaria de China.
-
-    Esta avispa, al igual que otras de su género, se alimenta de insectos (hormigas, mariposas, pulgones, etc.), pero también de abejas, aunque esta especie es más agresiva que otras. Es fácilmente distinguible por su tórax y su abdomen de color negro, exceptuando el cuarto segmento, de color amarillo. Sus patas de color marrón destacan por sus extremos amarillos. Sus alas son de un color oscuro. Es una especie diurna. Está naturalmente aclimatada a un medio ambiente subtropical templado. Se encuentra en el continente asiático hasta el norte de la India y en las montañas de China, en las zonas geográficas donde el clima es similar al del oeste de Europa (esto explica su buena adaptación en Europa).3
-
-    El tamaño varía según el alimento, el paraje y la temperatura, aunque es una de las especies de mayor tamaño.[cita requerida]
-    </p>
+    {% for faq in object_list %}
+      <h2 class="faq-title">{{ faq.title }}</h2>
+    <p class="faq-content">{{faq.body}}</p>
+      {% if faq.image %}
+        <img src="{{ faq.image.url }}" />
+      {% endif %} 
+    {% endfor %}
   </div>
-  <div class="col-xs-12">
-    <h2 class="faq-title">¿Por qué es importante tu colaboración?</h2>
-    <p class="faq-content">
-    Entre marzo y mayo las avispas reinas construyen unos nidos pequeños, de unos cinco centímetros, en los que colocan sus huevos; se trata de nidos primarios y es a finales de verano cuando cada una de las reinas construye otro nido en el que produce unas 200 nuevas reinas y entre 1.500 y 3.000 avispas obreras. Son nidos de gran tamaño que se ubican en las copas de los árboles, a mucha altura del suelo, y son más difíciles de localizar y destruir. 
-
-
-    Por eso destacamos la importancia de la implicación ciudadana en estos casos, ya que la detección y eliminación de estos nidos pequeños supone una reducción considerable del número de futuros avisperos de mayor tamaño. Por cada uno de estos nidos que se destruyen ahora evitamos 200 nidos, es decir, 200 avispas reinas y entre 1.500 y 3.000 avispas obreras. Estos nidos además son más accesibles que los que se construyen en los siguientes meses y se suelen detectar en árboles y arbustos, buhardillas, trasteros, garajes, o en fachadas orientadas al sur, en terrazas, ventanas, balcones o techados. 
-    </p>
-  </div> 
-  <div class="col-xs-12">
-    <h2 class="faq-title">¿Qué hacer en caso de ver un nido?</h2>
-    <p class="faq-content">
-      <ul>
-        <li>No se acerque a menos de 5 metros del avispero.</li>
-        <li>No intente provocarlo ni retirarlo por sus medios.</li>
-      </ul>
-    CONTACTE CON LA GUARDIA MUNICIPAL EN EL TLF. 092, facilitando la ubicación exacta del mismo.
-
-    Es muy importante que los ciudadanos informen de los nidos detectados para poder eliminarlos. Hay que contactar a través del 092 con la Guardia Municipal. Y en el caso de localizar un avispero grande se recomienda no acercarse a menos de cinco metros, y no intentar retirarlo por medios propios.
-
-    En estas labores están implicados los Bomberos, el servicio de Sanidad, y la Guardia Municipal, así como los guardias forestales de la Diputación Foral de Gipuzkoa.
-    </p>
-  </div> 
 </div>
 </div>
 {% endblock %}

@@ -3,13 +3,14 @@ from django.http import HttpResponse
 from django.views.generic.base import TemplateView
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
-from api.models import Sighting
+from api.models import Sighting, SightingFAQ
 
 class HomePageView(TemplateView):
     template_name = "home.html"
 
-class FAQView(TemplateView):
+class FAQView(ListView):
     template_name = "faq.html"
+    model = SightingFAQ
 
 class SightingExpertCommentsView(ListView):
     template_name = "sighting_expert_comments.html"

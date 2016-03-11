@@ -51,8 +51,9 @@ class Sighting(models.Model):
     TYPE_WASP = 1
     TYPE_NEST = 2
 
-    lat = models.FloatField(null=False, blank=False, verbose_name='Latitud')
-    lng = models.FloatField(null=False, blank=False, verbose_name='Longitud')
+    lat = models.FloatField(null=True, blank=True, verbose_name='Latitud')
+    lng = models.FloatField(null=True, blank=True, verbose_name='Longitud')
+
     location = models.ForeignKey(Location, on_delete=models.SET_NULL, related_name="sightings",
                                  verbose_name='Localización', null=True, blank=True)
 
@@ -69,6 +70,8 @@ class Sighting(models.Model):
     is_valid = models.NullBooleanField(verbose_name="Avistamiento válido", null=True, default=None)
 
     answers = models.ManyToManyField(Answer, related_name="sightings", default=None, blank=True)
+
+    source = models.CharField(max_length=128, verbose_name='Fuente')
 
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Fecha de creación')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Fecha de modificación')
@@ -111,3 +114,12 @@ class UserComment(models.Model):
 
     def __str__(self):
         return self.body
+
+class SightingFAQ(models.Model):
+    title = models.CharField(null=False, blank=False, max_length=128, verbose_name='Título')
+    body = models.TextField()
+    image = models.ImageField(upload_to="faq_images/", blank=True, null=True)
+
+    def __str__(self):
+        return self.title
+

@@ -1,0 +1,605 @@
+[
+  {
+    "id": 811,
+    "province": 29,
+    "name": "Alaior",
+    "url": "alaior",
+    "postal": 7730,
+    "lat": 39.930721,
+    "lng": 4.14009
+  },
+  {
+    "id": 812,
+    "province": 29,
+    "name": "Alaró",
+    "url": "alaro",
+    "postal": 7340,
+    "lat": 39.70583,
+    "lng": 2.78998
+  },
+  {
+    "id": 813,
+    "province": 29,
+    "name": "Alcúdia",
+    "url": "alcudia",
+    "postal": 7400,
+    "lat": 39.851608,
+    "lng": 3.12332
+  },
+  {
+    "id": 814,
+    "province": 29,
+    "name": "Algaida",
+    "url": "algaida",
+    "postal": 7210,
+    "lat": 39.558899,
+    "lng": 2.89517
+  },
+  {
+    "id": 815,
+    "province": 29,
+    "name": "Andratx",
+    "url": "andratx",
+    "postal": 7150,
+    "lat": 39.574699,
+    "lng": 2.42151
+  },
+  {
+    "id": 816,
+    "province": 29,
+    "name": "Ariany",
+    "url": "ariany",
+    "postal": 7529,
+    "lat": 39.650532,
+    "lng": 3.11157
+  },
+  {
+    "id": 817,
+    "province": 29,
+    "name": "Artà",
+    "url": "arta",
+    "postal": 7570,
+    "lat": 39.691002,
+    "lng": 3.34999
+  },
+  {
+    "id": 818,
+    "province": 29,
+    "name": "Banyalbufar",
+    "url": "banyalbufar",
+    "postal": 7191,
+    "lat": 39.687408,
+    "lng": 2.51423
+  },
+  {
+    "id": 819,
+    "province": 29,
+    "name": "Binissalem",
+    "url": "binissalem",
+    "postal": 7350,
+    "lat": 39.684109,
+    "lng": 2.84656
+  },
+  {
+    "id": 820,
+    "province": 29,
+    "name": "Búger",
+    "url": "buger",
+    "postal": 7311,
+    "lat": 39.758511,
+    "lng": 2.98425
+  },
+  {
+    "id": 821,
+    "province": 29,
+    "name": "Bunyola",
+    "url": "bunyola",
+    "postal": 7110,
+    "lat": 39.698668,
+    "lng": 2.699633
+  },
+  {
+    "id": 822,
+    "province": 29,
+    "name": "Calvià",
+    "url": "calvia",
+    "postal": 7184,
+    "lat": 39.565603,
+    "lng": 2.504368
+  },
+  {
+    "id": 823,
+    "province": 29,
+    "name": "Campanet",
+    "url": "campanet",
+    "postal": 7310,
+    "lat": 39.771141,
+    "lng": 2.96442
+  },
+  {
+    "id": 824,
+    "province": 29,
+    "name": "Campos",
+    "url": "campos",
+    "postal": 7630,
+    "lat": 39.433939,
+    "lng": 3.043385
+  },
+  {
+    "id": 825,
+    "province": 29,
+    "name": "Capdepera",
+    "url": "capdepera",
+    "postal": 7580,
+    "lat": 39.702994,
+    "lng": 3.434815
+  },
+  {
+    "id": 826,
+    "province": 29,
+    "name": "Castellitx",
+    "url": "castellitx",
+    "postal": 7210,
+    "lat": 39.562691,
+    "lng": 2.882967
+  },
+  {
+    "id": 827,
+    "province": 29,
+    "name": "Ciutadella de Menorca",
+    "url": "ciutadella-de-menorca",
+    "postal": 7760,
+    "lat": 40.002142,
+    "lng": 3.840408
+  },
+  {
+    "id": 828,
+    "province": 29,
+    "name": "Consell",
+    "url": "consell",
+    "postal": 7330,
+    "lat": 39.670166,
+    "lng": 2.816362
+  },
+  {
+    "id": 829,
+    "province": 29,
+    "name": "Costitx",
+    "url": "costitx",
+    "postal": 7144,
+    "lat": 39.656654,
+    "lng": 2.949486
+  },
+  {
+    "id": 830,
+    "province": 29,
+    "name": "Deyá",
+    "url": "deya",
+    "postal": 7179,
+    "lat": 39.746761,
+    "lng": 2.652168
+  },
+  {
+    "id": 831,
+    "province": 29,
+    "name": "Eivissa",
+    "url": "eivissa",
+    "postal": 7800,
+    "lat": 38.909202,
+    "lng": 1.432643
+  },
+  {
+    "id": 832,
+    "province": 29,
+    "name": "Escorca",
+    "url": "escorca",
+    "postal": 7315,
+    "lat": 39.820766,
+    "lng": 2.869363
+  },
+  {
+    "id": 833,
+    "province": 29,
+    "name": "Esporles",
+    "url": "esporles",
+    "postal": 7190,
+    "lat": 39.669836,
+    "lng": 2.578611
+  },
+  {
+    "id": 834,
+    "province": 29,
+    "name": "Estellencs",
+    "url": "estellencs",
+    "postal": 7192,
+    "lat": 39.653714,
+    "lng": 2.481666
+  },
+  {
+    "id": 835,
+    "province": 29,
+    "name": "Felanitx",
+    "url": "felanitx",
+    "postal": 7200,
+    "lat": 39.468601,
+    "lng": 3.148398
+  },
+  {
+    "id": 836,
+    "province": 29,
+    "name": "Ferreries",
+    "url": "ferreries",
+    "postal": 7750,
+    "lat": 39.983237,
+    "lng": 4.011641
+  },
+  {
+    "id": 837,
+    "province": 29,
+    "name": "Formentera",
+    "url": "formentera",
+    "postal": 7860,
+    "lat": 38.696731,
+    "lng": 1.453285
+  },
+  {
+    "id": 838,
+    "province": 29,
+    "name": "Fornalutx",
+    "url": "fornalutx",
+    "postal": 7109,
+    "lat": 39.781992,
+    "lng": 2.742248
+  },
+  {
+    "id": 839,
+    "province": 29,
+    "name": "Inca",
+    "url": "inca",
+    "postal": 7300,
+    "lat": 39.718774,
+    "lng": 2.915797
+  },
+  {
+    "id": 840,
+    "province": 29,
+    "name": "Lloret de Vistalegre",
+    "url": "lloret-de-vistalegre",
+    "postal": 7518,
+    "lat": 39.616665,
+    "lng": 2.976222
+  },
+  {
+    "id": 841,
+    "province": 29,
+    "name": "Lloseta",
+    "url": "lloseta",
+    "postal": 7360,
+    "lat": 39.718147,
+    "lng": 2.864771
+  },
+  {
+    "id": 842,
+    "province": 29,
+    "name": "Llubí",
+    "url": "llubi",
+    "postal": 7430,
+    "lat": 39.70055,
+    "lng": 3.004718
+  },
+  {
+    "id": 843,
+    "province": 29,
+    "name": "Llucmajor",
+    "url": "llucmajor",
+    "postal": 7620,
+    "lat": 39.485694,
+    "lng": 2.895026
+  },
+  {
+    "id": 844,
+    "province": 29,
+    "name": "Manacor",
+    "url": "manacor",
+    "postal": 7500,
+    "lat": 39.574634,
+    "lng": 3.202171
+  },
+  {
+    "id": 845,
+    "province": 29,
+    "name": "Mancor de la Vall",
+    "url": "mancor-de-la-vall",
+    "postal": 7312,
+    "lat": 39.750885,
+    "lng": 2.873397
+  },
+  {
+    "id": 846,
+    "province": 29,
+    "name": "Maó",
+    "url": "mao",
+    "postal": 7700,
+    "lat": 39.909004,
+    "lng": 4.288369
+  },
+  {
+    "id": 847,
+    "province": 29,
+    "name": "Maria de la Salut",
+    "url": "maria-de-la-salut",
+    "postal": 7519,
+    "lat": 39.670893,
+    "lng": 3.076043
+  },
+  {
+    "id": 848,
+    "province": 29,
+    "name": "Marratxí",
+    "url": "marratxi",
+    "postal": 7141,
+    "lat": 39.642347,
+    "lng": 2.75259
+  },
+  {
+    "id": 849,
+    "province": 29,
+    "name": "Mercadal",
+    "url": "mercadal",
+    "postal": 7740,
+    "lat": 39.988827,
+    "lng": 4.076099
+  },
+  {
+    "id": 850,
+    "province": 29,
+    "name": "Migjorn Gran",
+    "url": "migjorn-gran",
+    "postal": 7749,
+    "lat": 39.947516,
+    "lng": 4.048891
+  },
+  {
+    "id": 851,
+    "province": 29,
+    "name": "Montu",
+    "url": "montu",
+    "postal": 7230,
+    "lat": 39.570565,
+    "lng": 2.984591
+  },
+  {
+    "id": 852,
+    "province": 29,
+    "name": "Muro",
+    "url": "muro",
+    "postal": 7440,
+    "lat": 39.734287,
+    "lng": 3.053598
+  },
+  {
+    "id": 853,
+    "province": 29,
+    "name": "Palma de Mallorca",
+    "url": "palma-de-mallorca",
+    "postal": 7012,
+    "lat": 39.569771,
+    "lng": 2.650237
+  },
+  {
+    "id": 854,
+    "province": 29,
+    "name": "Petra",
+    "url": "petra",
+    "postal": 7520,
+    "lat": 39.609292,
+    "lng": 3.112264
+  },
+  {
+    "id": 855,
+    "province": 29,
+    "name": "Pobla",
+    "url": "pobla",
+    "postal": 7420,
+    "lat": 39.770844,
+    "lng": 3.016949
+  },
+  {
+    "id": 856,
+    "province": 29,
+    "name": "Pollença",
+    "url": "pollenca",
+    "postal": 7460,
+    "lat": 39.877963,
+    "lng": 3.01712
+  },
+  {
+    "id": 857,
+    "province": 29,
+    "name": "Porreres",
+    "url": "porreres",
+    "postal": 7260,
+    "lat": 39.517351,
+    "lng": 3.024888
+  },
+  {
+    "id": 858,
+    "province": 29,
+    "name": "Puigpunyent",
+    "url": "puigpunyent",
+    "postal": 7194,
+    "lat": 39.624235,
+    "lng": 2.527027
+  },
+  {
+    "id": 859,
+    "province": 29,
+    "name": "Salines",
+    "url": "salines",
+    "postal": 7640,
+    "lat": 39.339309,
+    "lng": 3.050852
+  },
+  {
+    "id": 860,
+    "province": 29,
+    "name": "Sant Antoni de Portmany",
+    "url": "sant-antoni-de-portmany",
+    "postal": 7820,
+    "lat": 38.98103,
+    "lng": 1.307244
+  },
+  {
+    "id": 861,
+    "province": 29,
+    "name": "Sant Joan",
+    "url": "sant-joan",
+    "postal": 7240,
+    "lat": 39.596099,
+    "lng": 3.039951
+  },
+  {
+    "id": 862,
+    "province": 29,
+    "name": "Sant Joan de Labritja",
+    "url": "sant-joan-de-labritja",
+    "postal": 7810,
+    "lat": 39.077426,
+    "lng": 1.51238
+  },
+  {
+    "id": 863,
+    "province": 29,
+    "name": "Sant Josep de sa Talaia",
+    "url": "sant-josep-de-sa-talaia",
+    "postal": 7830,
+    "lat": 38.921924,
+    "lng": 1.294112
+  },
+  {
+    "id": 864,
+    "province": 29,
+    "name": "Sant Llorençdes Cardassar",
+    "url": "sant-llorencdes-cardassar",
+    "postal": 7530,
+    "lat": 39.610515,
+    "lng": 3.284826
+  },
+  {
+    "id": 865,
+    "province": 29,
+    "name": "Sant Lluís",
+    "url": "sant-lluis",
+    "postal": 7710,
+    "lat": 39.853521,
+    "lng": 4.261215
+  },
+  {
+    "id": 866,
+    "province": 29,
+    "name": "Santa Eugénia",
+    "url": "santa-eugenia",
+    "postal": 7142,
+    "lat": 39.624565,
+    "lng": 2.839193
+  },
+  {
+    "id": 867,
+    "province": 29,
+    "name": "Santa Eulalia del Río",
+    "url": "santa-eulalia-del-rio",
+    "postal": 7840,
+    "lat": 38.981997,
+    "lng": 1.531649
+  },
+  {
+    "id": 868,
+    "province": 29,
+    "name": "Santa Margalida",
+    "url": "santa-margalida",
+    "postal": 7450,
+    "lat": 39.703687,
+    "lng": 3.103809
+  },
+  {
+    "id": 869,
+    "province": 29,
+    "name": "Santa María del Camí",
+    "url": "santa-maria-del-cami",
+    "postal": 7320,
+    "lat": 39.646345,
+    "lng": 2.776666
+  },
+  {
+    "id": 870,
+    "province": 29,
+    "name": "Santanyí",
+    "url": "santanyi",
+    "postal": 7650,
+    "lat": 39.355073,
+    "lng": 3.130331
+  },
+  {
+    "id": 871,
+    "province": 29,
+    "name": "Selva",
+    "url": "selva",
+    "postal": 7313,
+    "lat": 39.754366,
+    "lng": 2.902043
+  },
+  {
+    "id": 872,
+    "province": 29,
+    "name": "Sencelles",
+    "url": "sencelles",
+    "postal": 7140,
+    "lat": 39.646312,
+    "lng": 2.896185
+  },
+  {
+    "id": 873,
+    "province": 29,
+    "name": "Sineu",
+    "url": "sineu",
+    "postal": 7510,
+    "lat": 39.642644,
+    "lng": 3.010898
+  },
+  {
+    "id": 874,
+    "province": 29,
+    "name": "Sóller",
+    "url": "soller",
+    "postal": 7100,
+    "lat": 39.765468,
+    "lng": 2.714353
+  },
+  {
+    "id": 875,
+    "province": 29,
+    "name": "Son Servera",
+    "url": "son-servera",
+    "postal": 7550,
+    "lat": 39.624367,
+    "lng": 3.357396
+  },
+  {
+    "id": 876,
+    "province": 29,
+    "name": "Valldemossa",
+    "url": "valldemossa",
+    "postal": 7170,
+    "lat": 39.71204,
+    "lng": 2.622728
+  },
+  {
+    "id": 877,
+    "province": 29,
+    "name": "Vilafranca de Bonany",
+    "url": "vilafranca-de-bonany",
+    "postal": 7250,
+    "lat": 39.570003,
+    "lng": 3.084197
+  }
+]
