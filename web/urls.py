@@ -1,10 +1,15 @@
 from django.conf.urls import url
 from web import views
 from web.views import HomePageView
+from web.views import SightingView
 
 
 urlpatterns = [
     url(r'^$', HomePageView.as_view(), name='home'),
+
+    url(r'^sighting/(?P<sighting_id>[0-9]+)/$', SightingView.as_view(), name="sighting_id"),
+
+
 #    url(r'^sightings/$', views.sightings),
 #
 #    url(r'^sightings/(?P<sighting_id>[0-9]+)/$',
