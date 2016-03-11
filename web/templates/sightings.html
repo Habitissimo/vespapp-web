@@ -29,7 +29,7 @@ function initialize() {
   // Multiple Markers
   var markers = [
       {% for sighting in sightings_list %}
-      ['{{ sighting.location }}', {{ sighting.lat }},{{ sighting.lng }}],
+      ['{{ sighting.location }}', parseFloat('{{sighting.lat}}'.replace(',','.')), parseFloat('{{sighting.lng}}'.replace(',', '.'))],
       {% endfor %}
   ];
                       
@@ -37,8 +37,8 @@ function initialize() {
   var infoWindowContent = [
       {% for sighting in sightings_list %}
       ['<div class="info_content">' +
-      '<h3>London Eye</h3>' +
-      '<p>The London Eye is a giant Ferris wheel situated on the banks of the River Thames. The entire structure is 135 metres (443 ft) tall and the wheel has a diameter of 120 metres (394 ft).</p>' +        '</div>'],
+      '<h3>{{sighting.reported_by.username}}</h3>' +
+      '<p>{{sighting.free_text}}</p>' +        '</div>'],
       {% endfor %}
   ];
       
@@ -68,7 +68,7 @@ function initialize() {
   }
   // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
   var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
-      this.setZoom(14);
+      this.setZoom(8);
       google.maps.event.removeListener(boundsListener);
   });
     
