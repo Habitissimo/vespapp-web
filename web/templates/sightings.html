@@ -88,4 +88,15 @@ function initialize() {
 
 {% endif %}
 
+{% if object_list %}
+    <ul>
+    {% for sighting in object_list %}
+        <li><a href="/polls/{{ question.id }}/">{{ sighting.question_text }}</a></li>
+        <p>{{ sighting.lat }}</p>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+
 {% endblock %}

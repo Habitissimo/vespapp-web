@@ -80,7 +80,6 @@ class SightingQuestionsListView(APIView):
         sighting = Sighting.objects.get(pk=sighting_id)
 
         questions = Question.objects.filter(sighting_type=sighting.type)
-
         for question in questions:
             question_answers = sighting.answers.filter(question_id=question.id)
             question.answers = question_answers
@@ -110,3 +109,29 @@ class SightingQuestionsCreateView(ListCreateAPIView):
     def create(self, request, *args, **kwargs):
         request.data['sighting'] = kwargs.get('sighting_id')
         return super().create(request, *args, **kwargs)
+
+
+class SightingUserCommentView(ListCreateAPIView):
+    serializer_class = UserCommentSerializer
+
+    def get_queryset(self):
+        sighting_id = self.kwargs['sighting_id']
+        comments = UserComment.objects.filter(sighting=sighting_id)
+        return comments
+
+    def post(self, sighting_id):
+        #sighting_id = self.kwargs['sighting_id']
+
+        if not Sighting.objects.exists(id=sighting_id):
+            return None
+
+        sighting = Sighting.objects.get(id=sighting_id)
+
+        new_comment = UserComment(
+                body='pruebahehehe',
+                sighting=sighting,
+        )
+
+        new_comment.save()
+
+        return new_comment
