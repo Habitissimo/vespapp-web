@@ -11,4 +11,43 @@
 
 <p>sightings</p>
 
+{% if object_list %}
+<div>
+    <ul>
+    {% for sighting in sightings_list %}
+        
+        <p>La latitud es: {{ sighting.lat }}</p></br>
+        <p>La longitud es: {{ sighting.lng }}</p></br>
+        <p>La localizacion es: {{ sighting.location }}</p></br>
+        <p>El estado es es: {{ sighting.status }}</p></br>
+
+        <hr>
+
+    {% endfor %}
+    </ul>
+
+</div>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+
+{% if is_paginated %}
+        <div class="pagination">
+            <span class="page-links">
+                {% if page_obj.has_previous %}
+                    <a href="/sightings?page={{ page_obj.previous_page_number }}">previous</a>
+                {% endif %}
+                <span class="page-current">
+                    Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                </span>
+                {% if page_obj.has_next %}
+                    <a href="/sightings?page={{ page_obj.next_page_number }}">next</a>
+                {% endif %}
+            </span>
+        </div>
+    {% endif %}
+
+
+
+
 {% endblock %}
