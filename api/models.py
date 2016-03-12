@@ -76,6 +76,14 @@ class Sighting(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Fecha de creación')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Fecha de modificación')
 
+    @property
+    def first_picture(self):
+        if self.pictures.count():
+            return self.pictures.first()
+        else:
+            return None
+    
+
     def __str__(self):
         return "{}".format(self.id)
 
