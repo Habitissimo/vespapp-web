@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+from vespapp.settings import MEDIA_ROOT
+
 
 class Location(models.Model):
     name = models.CharField(max_length=128, null=False, blank=False, verbose_name='Nombre')
@@ -79,6 +81,10 @@ class Sighting(models.Model):
     def __str__(self):
         return "{}".format(self.id)
 
+    def href_location_tag(self):
+        return u'<a href="http://maps.google.es/?q={0},{1}">Ver lugar</a>'.format(self.lat, self.lng)
+    href_location_tag.short_description = 'Location url'
+    href_location_tag.allow_tags = True
 
 class Picture(models.Model):
     file = models.ImageField(null=False, blank=False, upload_to="sightings/")
@@ -86,6 +92,12 @@ class Picture(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Fecha de creación')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Fecha de modificación')
 
+
+    def image_tag(self):
+        #return u'<img src="{0}/{1}" />'.format(MEDIA_ROOT, self.)
+        return u'<img src="{}" />'.format(self.file.url)
+    image_tag.short_description = 'Image'
+    image_tag.allow_tags = True
 
 class ExpertComment(models.Model):
     user = models.ForeignKey(User, related_name="expert_comments", null=True)
