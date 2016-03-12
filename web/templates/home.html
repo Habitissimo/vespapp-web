@@ -2,24 +2,28 @@
 
 {% block title %}Home{% endblock %}
 {% block body %}
-
-<div class="row">
-  <div class="text-center home-hero">
-    <div class="home-title text-center">
-      <h1>Lucha contra la avispa</h1>
-    </div>
-    {% include "components/carousel.html" %}
-    <div class="col-xs-12 camera-button-container text-center clearfix">
-      {% include "components/camera-button.html" %}
+<div class="container">
+  <div class="row">
+    <div class="text-center home-hero">
+      <div class="home-title text-center">
+        <h1>Lucha contra la avispa</h1>
+      </div>
+      {% include "components/carousel.html" %}
+      <div class="col-xs-12 camera-button-container text-center clearfix">
+        {% include "components/camera-button.html" %}
+      </div>
     </div>
   </div>
 </div>
-<div class="row">
-  {% include "components/home-info.html" %}
-</div>
-<div class="row">
-  <div class="col-lg-4 col-lg-offset-4 text-center">
-    {% include "components/button-primary.html" with src="#" text="Envía un avispamiento" %}
+
+<div class="container home-footer">
+  <div class="row">
+    {% include "components/home-info.html" %}
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-lg-offset-4 text-center">
+      {% include "components/button-primary.html" with src="#" text="Envía un avispamiento" %}
+    </div>
   </div>
 </div>
 {% endblock %}

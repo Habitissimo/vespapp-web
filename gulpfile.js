@@ -6,6 +6,9 @@ var concat = require('gulp-concat');
 var minifyCSS = require('gulp-minify-css');
 var lessPluginAutoPrefix = require('less-plugin-autoprefix');
 var autoprefix= new lessPluginAutoPrefix({ browsers: ["last 2 versions"] });
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
+
 
 // Watching paths
 var paths = {
@@ -15,7 +18,7 @@ var paths = {
   dist: 'vespapp/staticfiles/'
 };
 
-gulp.task('default', ['less', 'fonts', 'scripts']);
+gulp.task('default', ['less', 'fonts', 'scripts', 'images']);
 
 gulp.task('develop', ['default', 'watch']);
 
@@ -54,4 +57,17 @@ gulp.task('less', function() {
   .pipe(minifyCSS())
   .pipe(concat('main.min.css'))
   .pipe(gulp.dest('./vespapp/staticfiles/css'));
+});
+
+gulp.task('images', function() {
+    return gulp.src('src/img/*')
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [
+                {removeViewBox: false},
+                {cleanupIDs: false}
+            ],
+            use: [pngquant()]
+        }))
+        .pipe(gulp.dest('./vespapp/staticfiles/img'));
 });
