@@ -2,4 +2,14 @@
 
 {% block body %}
 	<p>sighting_comments id: {{sighting_id}}</p>
+
+	{% if user_comment_list %}
+      <ul>
+        {% for user_comment in user_comment_list %}
+          <li>{{ user_comment.body }}</li>
+        {% endfor %}
+      </ul>
+      {% else %}
+        <p>No hay comentarios.</p>
+      {% endif %}
 {% endblock %}

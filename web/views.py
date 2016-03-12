@@ -56,9 +56,15 @@ class SightingCommentView(DetailView):
 
         return comment
 
-
+    
 class SightingCommentsView(ListView):
-	template_name = "sighting_comments.html"
+    template_name = "sighting.html"
+    model = UserComment# Defino el modelo que utilizo
+    context_object_name = "user_comment_list"# Defino la lista donde se cargan los objetos del modelo
+
+    def get_queryset(self, **kwargs):
+        return UserComment.objects.all()
+
 	
 class SightExpertCommentView(DetailView):
 	template_name = "sight_expert_comment.html"
