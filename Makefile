@@ -1,3 +1,7 @@
+docker_nginx_build:
+	docker build -t vespapp/nginx dockerfile_nginx/
+docker_nginx_push:
+	docker push vespapp/nginx
 docker_build:
 	docker build -t vespapp/vespapp-web .
 docker_push:
