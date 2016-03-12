@@ -4,18 +4,31 @@
 {% block description %}Avistamiento en concreto{% endblock %}
 
 {% block body %}
-	<p>id: {{ object.id }}</p>
-    <p>latitud: {{ object.lat }}</p>
-    <p>lng: {{ object.lng }}</p>
-    <p>location: {{ object.location }}</p>
-    <p>status: {{ object.status }}</p>
-    <p>free_text: {{ object.free_text }}</p>
-    <p>type: {{ object.type }}</p>
-    <p>public: {{ object.public }}</p>
-    <p>reported_by: {{ object.reported_by }}</p>
-    <p>moderator: {{ moderator.free_text }}</p>
-    <p>is_valid: {{ object.is_valid }}</p>
-    <p>answers: {{ object.answers }}</p>
-    <p>created_at: {{ object.created_at }}</p>
-    <p>updated_at: {{ moderator.updated_at }}</p>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Avistamiento</h1>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-8">
+      <p>id: {{ object.id }}</p>
+      <p>latitud: {{ object.lat }}</p>
+      <p>lng: {{ object.lng }}</p>
+      <p>location: {{ object.location }}</p>
+      <p>status: {{ object.status }}</p>
+      <p>free_text: {{ object.free_text }}</p>
+      <p>type: {{ object.type }}</p>
+      <p>public: {{ object.public }}</p>
+      <p>reported_by: {{ object.reported_by }}</p>
+      <p>moderator: {{ moderator.free_text }}</p>
+      <p>is_valid: {{ object.is_valid }}</p>
+      <p>answers: {{ object.answers }}</p>
+      <p>created_at: {{ object.created_at }}</p>
+      <p>updated_at: {{ moderator.updated_at }}</p>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+    MAPA (copiar de sightings)
+    </div>
+  </div>
+</div>
+
 {% endblock %}

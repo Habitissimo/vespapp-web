@@ -66,3 +66,5 @@ class SightExpertCommentView(DetailView):
 class SightingExpertCommentsView(ListView):
     template_name = "sighting_expert_comments.html"
 
+class NewSightingView(TemplateView):
+	template_name = "new_sighting.html"

@@ -10,12 +10,16 @@ from web.views import LocationsPageView
 from web.views import SightingCommentView
 from web.views import SightingCommentsView
 from web.views import SightExpertCommentView
+from web.views import NewSightingView
 
 
 urlpatterns = [
     url(r'^$', HomePageView.as_view(), name='home'),
     url(r'^faq/$', FAQView.as_view(), name='faq'),
-
+    url(r'^locations/$', LocationsPageView.as_view(), name='locations'),
+    url(r'^new_sighting/$', NewSightingView.as_view(), name='new_sighting'),   
+    url(r'^sighting/(?P<sighting_id>[0-9]+)/expert_comments/$',
+    	SightingExpertCommentsView.as_view(), name='sighting_expert_comments'),
     url(r'^sighting/(?P<sighting_id>[0-9]+)/$', SightingView.as_view(), name="sighting_id"),
     url(r'^sightings/$', SightingsView.as_view(), name='sightings'),
     url(r'^sight_question/(?P<sighting_id>[0-9]+)/$', SightQuestionView.as_view(), name='sight_question'),
