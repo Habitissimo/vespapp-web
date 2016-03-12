@@ -15,8 +15,9 @@
       margin-top: 50px;
       font-size: 6em;
       text-shadow: 0 0 7px rgba(0, 0, 0, .8);
-      @media screen and (max-width: @screen-md-max) {
-        font-size: 4em;
+      @media screen and (max-width: @screen-xs-max) {
+        margin-top: 30px;
+        font-size: 2.5em;
       }
     }
   }
@@ -25,6 +26,15 @@
     .carousel-caption {
       padding-bottom: 300px;
     }
+    max-height: 500px;
+    overflow: hidden;
+    .carouel-innner {
+      overflow: hidden;
+      max-height: 500px;
+      .item {
+        max-height: 500px;
+      }
+    }
   }
 
   .camera-button-container {
@@ -32,7 +42,11 @@
     z-index: 99999999999;
 
     @media screen and (max-width: @screen-xs-max) {
-      top: 74%;
+      top: 80%;
+    }
+
+    @media screen and (min-width: @screen-sm-min) {
+      top: 82%;
     }
 
     @media screen and (min-width: @screen-lg-min) {
