@@ -1,5 +1,5 @@
 web: &web
-  build: .
+  image: vespapp/vespapp-web
   environment:
     - "DB_HOST=db"
     - "DB_PORT=5432"
@@ -38,6 +38,8 @@ nginx:
     - "gunicorn"
   links:
     - "gunicorn"
+  volumes_from:
+    - "gunicorn:rw"
   ports:
     - "80:80"
 
